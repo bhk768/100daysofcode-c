@@ -1,3 +1,4 @@
+/*Write a program to find the 1’s complement of a binary number and print it.*/
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -27,4 +28,5 @@ printf("1'st complement is %s",onescomplement);
 
 
     return 0;
+
 }
