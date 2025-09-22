@@ -17,7 +17,7 @@ int mid;
 int pos;
 while(low<=high){
     mid=(low+high)/2;
-    if(arr[i]==key){
+    if(arr[mid]==key){
         pos=mid;
     
     break;
@@ -48,4 +48,5 @@ for(i=0;i<n;i++){
 
 
     return 0;
+
 }
