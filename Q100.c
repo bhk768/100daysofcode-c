@@ -1,4 +1,4 @@
-/*Print all sub-strings of a string.
+/*Print all sub-strings of a string
 Input 1:
 abc
 Output 1:
@@ -24,5 +24,6 @@ int main() {
 
     return 0;
 }
+
 
 
