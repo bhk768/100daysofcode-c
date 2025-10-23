@@ -4,7 +4,7 @@ s = "abcabcbb"
 Output 1:
 3
 Explanation 1:
-The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.*/
+The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers*/
 #include <stdio.h>
 #include <string.h>
 
@@ -42,3 +42,4 @@ int main() {
 
     return 0;
 }
+
