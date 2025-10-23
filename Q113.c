@@ -4,7 +4,7 @@ arr[] = [10, 5, 4, 3, 48, 6, 2, 33, 53, 10], k = 4
 Output 1:
 5
 Explanation 1:
-4th smallest element in the given array is 5.*/
+4th smallest element in the given array is 5*/
 #include <stdio.h>
 int main(){
 int n,i,j,temp,k;
@@ -38,3 +38,4 @@ printf("the  %dth smallest number is %d ",k,arr[k-1]);
 
     return 0;
 }
+
