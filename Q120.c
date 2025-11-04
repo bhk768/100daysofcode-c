@@ -33,3 +33,4 @@ printf("the string after sentence case is %s",str);
 
     return 0;
 }
+
