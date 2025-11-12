@@ -8,6 +8,7 @@ Explanation 1:
 The program iterates through each character, counts vowels (A, E, I, O, U) and consonants, ignoring other symbols.*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 int main(){
 char file[100];
 int ch,consonants=0,vowels=0;
@@ -23,12 +24,13 @@ if((fp==NULL)){
     return 1;
 }
 while((ch=fgetc(fp))!=EOF){
-    if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+if(isalpha(ch)){
+    ch=tolower(ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
     vowels++;
-    else if(ch>'a' && ch<'z'|| ch>'A' && ch<'Z')
-    consonants++;
     else
-    continue;
+    consonants++;
+}
 }
 fclose(fp);
 printf("vowels : %d\n consonants:%d",vowels,consonants);
